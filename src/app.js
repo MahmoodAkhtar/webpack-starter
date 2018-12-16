@@ -1,1 +1,3 @@
-let test = () => console.log("123");
+let test = () => console.log("Ahlan!");
+
+test();
