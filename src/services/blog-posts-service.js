@@ -1,7 +1,7 @@
 
 let _url = new WeakMap();
 
-class PostsService {
+class BlogPostsService {
 
     constructor() {
         _url.set(this, "https://jsonplaceholder.typicode.com/posts");
@@ -13,4 +13,4 @@ class PostsService {
     }
 }
 
-module.exports = PostsService;
+module.exports = BlogPostsService;

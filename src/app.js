@@ -1,9 +1,9 @@
-import PostsService from "./services/posts-service";
+import BlogPostsService from "./services/blog-posts-service";
+import "./components/blog-post";
 
 window.addEventListener("load", () => {
-    const res = new PostsService().fetchPosts();
-    console.log(res);
     const main = document.querySelector("main");
+    const res = new BlogPostsService().fetchPosts();
 
     res.then(json => {
         console.log(json);
